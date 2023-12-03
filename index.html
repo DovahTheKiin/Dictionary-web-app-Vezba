@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Web App Vezba</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <img src="assets/images/logo.svg" alt="Logo" class="logo">
+            <div class="nav-options">
+                <div class="font-menu">
+                    <p class="font-list">Sans Serif</p>
+                    <button class="drop-down-menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" class="arrow-down">
+                            <path fill="none" stroke="#A445ED" stroke-width="1.5" d="m1 1 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="drop-down-menu">
+                        <ul class="drop-down-list">
+                            <li class="sans-serif">Sans Serif</li>
+                            <li class="serif">Serif</li>
+                            <li class="mono">Mono</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="day-night-mode">
+                    <div class="slider">
+                        <div class="slider-ball"></div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="day-night-svg">
+                        <path fill="none" stroke="#838383" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 10.449a10.544 10.544 0 0 0 19.993 4.686C11.544 15.135 6.858 10.448 6.858 1A10.545 10.545 0 0 0 1 10.449Z" class="moon-icon"/>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="search-bar">
+                <input type="text" name="search-input" id="search-input" class="search-input" placeholder="Search for any word...">
+                <button class="search-button">
+                    <img src="assets/images/icon-search.svg" alt="Search Icon" class="search-icon">
+                </button>
+                <p class="error-message hidden">
+                    Whoops, can’t be empty…
+                </p>
+            </div>
+            <div class="not-found hidden">
+                <div class="smiley">
+                    &#x1F615	
+                </div>
+                <h3>No Definitions Found</h3>
+                <p>
+                    Sorry pal, we couldn't find definitions for the word you were looking for. 
+                    You can try the search again at later time or head to the web instead.
+                </p>
+            </div>
+            <div class="searched-word hidden">
+                <div class="word">
+                    <h1>KEYBOARD</h1>
+                    <p>/'ki:bc:d/</p>
+                </div>
+                <button class="play-word">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" class="play-button">
+                        <g fill="#A445ED" fill-rule="evenodd" class="triangle">
+                            <circle cx="37.5" cy="37.5" r="37.5" opacity=".25" class="play-bg"/>
+                            <path d="M29 27v21l21-10.5z"/>
+                        </g>
+                    </svg>
+                    <audio src="" class="audio-link">
+                    </audio>
+                </button>
+            </div>
+        </header>
+        <main class="main hidden">
+        </main>
+        <footer class="footer hidden">
+        </footer>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
