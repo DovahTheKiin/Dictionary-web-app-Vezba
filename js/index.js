@@ -27,11 +27,7 @@ const synonymsDiv = document.querySelectorAll(".synonyms")
 const playButton = document.querySelector(".play-word")
 const audioLink = document.querySelector(".audio-link")
 
-document.addEventListener('click', (ev) => {
-    if(ev.target.matches('.slider-ball')) {
 
-    } 
-})
 sliderBall.addEventListener('click', darkMode)
 function darkMode() {
     sliderBall.classList.toggle("dark-mode");
@@ -94,12 +90,12 @@ function lightModeFunction() {
         verbNew[i].classList.remove("white-text")
     }
 }
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    sliderBall.classList.toggle("dark-mode");
-    darkModeFunction();
-} else if(window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-    lightModeFunction();
-}
+// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//     sliderBall.classList.toggle("dark-mode");
+//     darkModeFunction();
+// } else if(window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+//     lightModeFunction();
+// }
 dropDownMenuBtn.addEventListener('click', () => {
     dropDownMenu.classList.toggle("show");
 })
@@ -319,6 +315,7 @@ document.addEventListener('click', (ev) => {
     if(ev.target.matches('.synonym-p')) {
         searchInput.value = ev.target.innerHTML;
         searchButton.click();
+        window.scrollTo({ top: 0});
     }
 })
 document.addEventListener('keydown', (e) =>{
